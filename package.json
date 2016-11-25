@@ -2,13 +2,16 @@
   "name": "exiting-loops",
   "version": "0.1.0",
   "description": "Explore ways of exiting loops in JavaScript",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "engines": {
     "node": "6.x",
     "npm": "3.x"
   },
-  "main": "index.js",
   "scripts": {
-    "test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json"
+    "test": "mocha --timeout 10000 -R mocha-multi --reporter-options nyan=-,json=.results.json"
   },
   "repository": {
     "type": "git",
@@ -24,5 +27,13 @@
   "bugs": {
     "url": "https://github.com/learn-co-curriculum/exiting-loops/issues"
   },
-  "homepage": "https://github.com/learn-co-curriculum/exiting-loops#readme"
+  "homepage": "https://github.com/learn-co-curriculum/exiting-loops#readme",
+  "devDependencies": {
+  "chai": "^3.5.0",
+  "expect": "^1.20.2",
+  "jsdom": "^9.0.0",
+  "mocha": "^2.4.5",
+  "mocha-jsdom": "^1.1.0",
+  "mocha-multi": "^0.9.0"
+  }
 }
